@@ -1,13 +1,13 @@
 // console.log('js connected');
 
-
-
-document.getElementById('case-plus').addEventListener('click', function(){
-    // console.log('click in case pluse');
+function updateCaseNumber(){
     const caseInput = document.getElementById('case-number');
     const caseNumber = caseInput.value;
-    // console.log(caseNumber);
     caseInput.value = parseInt(caseNumber) + 1;
+}
+
+document.getElementById('case-plus').addEventListener('click', function(){
+    updateCaseNumber();
 });
 
 document.getElementById('case-minus').addEventListener('click', function(){
